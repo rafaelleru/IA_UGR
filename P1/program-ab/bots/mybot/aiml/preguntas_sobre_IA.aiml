@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+   <category>
+     <pattern>Hola</pattern>
+     <template>Hola que tal soy el chico de las poesias</template>
+   </category>
+
+   <category>
+     <pattern>tu fiel admirador</pattern>
+     <template>y el que no te conocia</template>
+   </category>
+
+   <category>
+     <pattern>somos dos hombres con un mismo destino</pattern>
+     <template>y aunque tu seas mi amigo, luchareee (8)</template>
+   </category>
+
+    <category>
+      <pattern>ok</pattern>
+      <template>pos ok</template>
+    </category>
+
+   <category>
+     <pattern>cabron</pattern>
+     <template>tus muertos</template>
+   </category>
+
+   <category>
+     <pattern>dime algo</pattern>
+     <template>algo</template>
+   </category>
+
+   <category>
+     <pattern>canta a los guns</pattern>
+     <template>here I am and you're a rocket queen
+       I might be a little young but honey I ain't naive
+       here I am and you're a rocket queen ouh yeah
+       I migth be to much but honey you're a bit obscene</template>
+    </category>
+
+    <category>
+      <pattern>canta AC/DC</pattern>
+      <template>I'm on the highway to hell
+        Highway to hell</template>
+    </category>
+<!-- pregunta 1 -->
+   <category>
+     <pattern>APROBAR IA</pattern>
+     <template>Sacando mas de un 5</template>
+   </category>
+
+   <category>
+     <pattern>APROBAR IA GERUNDIO</pattern>
+     <template>sacar mas de un 5</template>
+   </category>
+
+
+   <category>
+     <pattern>* apruebo ^</pattern>
+     <template><srai>APROBAR IA</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ aprobar ^</pattern>
+     <template><srai>APROBAR IA GERUNDIO</srai></template>
+   </category>
+
+<!-- pregunta 2 -->
+   <category>
+     <pattern>APROBAR TEORIA</pattern>
+     <template>Hay que aprobar el examen final, sacando mas de 5 sobre 10, animo</template>
+   </category>
+
+   <category>
+     <pattern>^ aprobar ^ teoria</pattern>
+     <template><srai>APROBAR TEORIA</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ apruebo ^ teoria</pattern>
+     <template><srai>APROBAR TEORIA</srai></template>
+   </category>
+
+<!-- pregunta 3 -->
+   <category>
+     <pattern>APROBAR PRACTICA</pattern>
+     <template>Sacando mas de 5 en la media de las 3 practicas y el examen de ejercicios</template>
+   </category>
+
+   <category>
+     <pattern>^ aprobar ^ practica</pattern>
+     <template><srai>APROBAR PRACTICA</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ supero ^ practica</pattern>
+     <template><srai>APROBAR PRACTICA</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ supero ^ practicas</pattern>
+     <template><srai>APROBAR PRACTICA</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ apruebo ^ practicas</pattern>
+     <template><srai>APROBAR PRACTICA</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ aprobar ^ practicas</pattern>
+     <template><srai>APROBAR PRACTICA</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ apruebo ^ practica</pattern>
+     <template><srai>APROBAR PRACTICA</srai></template>
+   </category>
+
+<!-- pregunta 4 -->
+   <category>
+     <pattern>EXAMEN JUNIO</pattern>
+     <template>se evaluara la parte de teoria que cuenta el 50% y las practicas el otro 50%</template>
+   </category>
+
+   <category>
+     <pattern>^ evalua ^ junio</pattern>
+     <template><srai>EXAMEN JUNIO</srai></template>
+   </category>
+
+   <category>
+     <pattern>^ puntua ^ Junio ^</pattern>
+     <template><srai>EXAMEN JUNIO</srai></template>
+   </category>
+
+<!-- pregunta 5 -->
+   <category>
+     <pattern>CONVOCATORIA SEPTIEMBRE</pattern>
+     <template>tendras que aprobar un examen unico</template>
+   </category>
+
+   <category>
+     <pattern>^ convocatoria ^ septiembre</pattern>
+     <template><srai>CONVOCATORIA SEPTIEMBRE</srai></template>
+   </category>
+
+<!-- pregunta 6 -->
+   <category>
+     <pattern>EXAMEN SEPTIEMBRE</pattern>
+     <template>en septiembre solo hay un examen unico</template>
+   </category>
+
+   <category>
+     <pattern>^ examen ^ practicas ^ septiembre ^</pattern>
+     <template><srai>EXAMEN SEPTIEMBRE</srai></template>
+   </category>
+
+   <category>
+     <pattern> ^ practicas ^ septiembre ^</pattern>
+     <template><srai>EXAMEN SEPTIEMBRE</srai></template>
+   </category>
+
+<!-- pregunta 7 -->
+   <category>
+       <pattern>ASISTENCIA CLASE</pattern>
+     <template>La asistencia a clase no es obligatoria aunque si que se tiene en cuenta a la hora de la evaluacion final</template>
+   </category>
+
+    <category>
+     <pattern>^ asistir ^ regularmente ^</pattern>
+     <template><srai>ASISTENCIA CLASE</srai></template>
+    </category>
+
+    <category>
+      <pattern>^ cuenta ^ asistencia ^</pattern>
+      <template><srai>ASISTENCIA CLASE</srai></template>
+    </category>
+
+    <category>
+      <pattern> ^ ir ^ clase</pattern>
+      <template><srai>ASISTENCIA CLASE</srai></template>
+    </category>
+
+<!--pregunta 8-->
+    <category>
+     <pattern>NOTA MINIMA</pattern>
+     <template>Hay que sumar entre teoria y practicas mas de un 5</template>
+    </category>
+
+    <category>
+        <pattern>^ nota minima ^</pattern>
+        <template><srai>NOTA MINIMA</srai></template>
+    </category>
+<!--pregunta 9-->
+
+    <category>
+        <pattern>PRACTICAS OBLIGATORIAS</pattern>
+        <template>si hay que sacar mas de un 5 en la nota media de las tres practicas y el examen de ejercicios</template>
+    </category>
+
+    <category>
+        <pattern>^obligatoriamente ^ practicas ^</pattern>
+        <template><srai>PRACTICAS OBLIGATORIAS</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ practicas ^ obligatorias ^</pattern>
+        <template><srai>PRACTICAS OBLIGATORIAS</srai></template>
+    </category>
+<!--pregunta 10-->
+    <category>
+        <pattern>VALOR PRACTICA</pattern>
+        <template>cada practica cuenta un 25% de la nota final de practicas</template>
+    </category>
+
+    <category>
+        <pattern>^ valor ^ practica ^</pattern>
+        <template><srai>VALOR PRACTICA</srai></template>
+    </category>
+<!--pregunta 11-->
+    <category>
+        <pattern>VALOR PARTICIPACION</pattern>
+        <template>la asistencia y participacion se valoraran con un 10% de la nota final</template>
+    </category>
+
+    <category>
+        <pattern>^ valor ^ participacion ^</pattern>
+        <template><srai>VALOR PARTICIPACION</srai></template>
+    </category>
+
+<!--pregunta 12-->
+    <category>
+        <pattern>VALOR GUION</pattern>
+        <template>un 25% de las practicas, que se puntuan sobre 9 ya que el punto restante es de asistencia</template>
+    </category>
+
+    <category>
+        <pattern>^ valor ^ guion ^ final^</pattern>
+        <template><srai>VALOR GUION</srai></template>
+    </category>
+<!--pregunta 13-->
+    <category>
+        <pattern>PUNTOS POR PARTICIPACION</pattern>
+        <template>siendo activo en clase</template>
+    </category>
+
+    <category>
+        <pattern>^ puntos ^ participacion ^</pattern>
+        <template><srai>PUNTOS POR PARTICIPACION</srai></template>
+    </category>
+   <!--pregunta 14-->
+   <category>
+       <pattern>^ minimo ^ necesito ^ aprobar ^</pattern>
+       <template><srai>PUNTOS POR PARTICIPACION</srai></template>
+   </category>
+
+   <category>
+       <pattern>^ puntos ^ participacion ^</pattern>
+       <template><srai>PUNTOS POR PARTICIPACION</srai></template>
+   </category>
+   <!--pregunta 15-->
+
+   <category>
+       <pattern>TRABAJOS INDIVIDUALES</pattern>
+       <template>Si todas los trabajos son individuales salvo que se indique lo contrario</template>
+   </category>
+
+   <category>
+       <pattern>^ trabajos ^ individuales </pattern>
+       <template><srai>TRABAJOS INDIVIDUALES</srai></template>
+   </category>
+   <!--pregunta 16-->
+
+   <category>
+       <pattern>^ trabajos ^ grupo ^</pattern>
+       <template><srai>TRABAJOS INDIVIDUALES</srai></template>
+   </category>
+   <!--pregunta 17-->
+
+   <category>
+       <pattern>RELACIONES EJERCICIOS</pattern>
+       <template>No aunque te ayudará hacerlas para el examen de ejerciciosde junio</template>
+   </category>
+
+   <category>
+       <pattern>^ relaciones ^ ejercicios ^ </pattern>
+       <template><srai>RELACIONES EJERCICIOS</srai></template>
+   </category>
+
+   <!--pregunta 18-->
+
+   <category>
+       <pattern>^ puntos ^ participacion ^</pattern>
+       <template><srai>PUNTOS POR PARTICIPACION</srai></template>
+   </category>
+   <!--pregunta 19-->
+   <category>
+       <pattern>PRIMER EXAMEN</pattern>
+       <template>Solo hay un examen que cuenta el 100% de la nota de teoria</template>
+   </category>
+
+   <category>
+       <pattern>^ primer examen ^</pattern>
+       <template><srai>PRIMER EXAMEN</srai></template>
+   </category>
+   <!--pregunta 20-->
+
+   <category>
+       <pattern>MAXIMA NOTA</pattern>
+       <template>LA nota maxima es un 10, lo siento</template>
+   </category>
+
+   <category>
+       <pattern>^ nota ^ mayor ^10 ^</pattern>
+       <template><srai>MAXIMA NOTA</srai></template>
+   </category>
+
+   <!--pregunta 21-->
+
+   <category>
+       <pattern>RECUPERAR NOTA</pattern>
+       <template>No lo se todavia</template>
+   </category>
+
+   <category>
+       <pattern>^ recuperar ^</pattern>
+       <template><srai>RECUPERAR NOTA</srai></template>
+   </category>
+   <!--pregunta 22-->
+
+   <category>
+       <pattern>COPIA</pattern>
+       <template>Vas directamente a Septiembre</template>
+   </category>
+
+   <category>
+       <pattern>^ copio ^</pattern>
+       <template><srai>COPIA</srai></template>
+   </category>
+   <!--pregunta 23-->
+
+   <category>
+       <pattern>^ copiar ^</pattern>
+       <template><srai>COPIA</srai></template>
+   </category>
+   <!--pregunta 24-->
+
+   <category>
+       <pattern>SUSPENSO JUNIO</pattern>
+       <template>te queda la convocatoria de Septiembre</template>
+   </category>
+
+   <category>
+       <pattern>^ suspendo ^ Junio</pattern>
+       <template><srai>SUSPENSO JUNIO</srai></template>
+   </category>
+   <!--pregunta 25-->
+
+   <category>
+       <pattern>^ vale ^ practica ^ teoria</pattern>
+       <template><srai>EXAMEN JUNIO</srai></template>
+   </category>
+
+   <category>
+       <pattern>^ valen ^ practicas ^ teoria</pattern>
+       <template><srai>EXAMEN JUNIO</srai></template>
+   </category>
+   <!--pregunta 26-->
+
+   <category>
+       <pattern>^ horario ^ tutoria ^</pattern>
+       <template>Lunes de 11:30 a 13:30 en ND (ETSIIT)
+         Miércoles de 15:30 a 18:30 en M2 (FCiencia)
+         Viernes de 17:30 a 18:30 en ND (ETSIIT)</template>
+   </category>
+   <!--pregunta 27-->
+
+   <category>
+       <pattern>EMAIL</pattern>
+       <template>rocio@decsai.ugr.es</template>
+   </category>
+
+   <category>
+       <pattern>^ email ^</pattern>
+       <template><srai>EMAIL</srai></template>
+   </category>
+
+   <category>
+       <pattern>^ correo electronico ^ </pattern>
+       <template><srai>EMAIL</srai></template>
+   </category>
+
+   <!-- pregunta 28 -->
+
+   <category>
+    <pattern>APROBAR SIN PRACTICA</pattern>
+    <template>si con las otras dos y el examen superas el 5 si</template>
+  </category>
+
+  <category>
+    <pattern>^ aprobar ^ sin entregar ^</pattern>
+    <template><srai>APROBAR SIN PRACTICA</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ aprobar ^ sin defender ^</pattern>
+    <template><srai>APROBAR SIN PRACTICA</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ aprobar ^ faltando ^ practica</pattern>
+    <template><srai>APROBAR SIN PRACTICA</srai></template>
+  </category>
+
+  <!-- pregunta 29 -->
+
+  <category>
+    <pattern>NOTA MEDIA MINIMA</pattern>
+    <template>un 4</template>
+  </category>
+
+  <category>
+    <pattern>^ nota minima ^ media ^</pattern>
+    <template><srai>NOTA MEDIA MINIMA</srai></template>
+  </category>
+
+  <!-- pregunta 30 -->
+
+  <category>
+    <pattern>NOTA NIVEL 3</pattern>
+    <template>como minimo si los otros dos niveles estan bien sacaras un 8</template>
+  </category>
+
+  <category>
+    <pattern>^ nota ^ nivel 3 ^</pattern>
+    <template><srai>NOTA NIVEL 3</srai></template>
+  </category>
+
+  <!-- pregunta 31 -->
+
+  <category>
+    <pattern>NIVEL 0</pattern>
+    <template>No este es el nivel que hay que superar si o si</template>
+  </category>
+
+  <category>
+    <pattern>^ entregar ^ practica ^ nivel 0 ^</pattern>
+    <template><srai>NIVEL 0 </srai></template>
+  </category>
+
+  <!-- pregunta 32 -->
+
+  <category>
+    <pattern>ASISTENCIA PRACTICA 1</pattern>
+    <template>Ponerte en contacto con tu profesor de practicas</template>
+  </category>
+
+  <category>
+    <pattern>^ no puedo asistir ^ defensa ^ practica 1</pattern>
+    <template><srai>ASISTENCIA PRACTICA 1</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ falto ^ defensa ^ practica 1</pattern>
+    <template><srai>ASISTENCIA PRACTICA 1</srai></template>
+  </category>
+
+  <!-- pregunta 33 -->
+
+  <category>
+    <pattern>PRUEBAS TEORICAS</pattern>
+    <template>solo una en junio</template>
+  </category>
+
+  <category>
+    <pattern>^ pruebas ^teori^ curso ^</pattern>
+    <template><srai>PRUEBAS TEORICAS</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ examenes ^teori^ curso ^</pattern>
+    <template><srai>PRUEBAS TEORICAS</srai></template>
+  </category>
+
+  <!-- pregunta 34 -->
+
+  <category>
+    <pattern>^ PRIMERA PRUEBA ^</pattern>
+    <template>1/3 de los dos puntos que valen las pruebas</template>
+  </category>
+
+  <!-- pregunta 35 -->
+
+  <category>
+    <pattern>^ teori^ asistencia ^</pattern>
+    <template><srai>ASISTENCIA CLASE</srai></template>
+  </category>
+
+  <!-- pregunta 36 -->
+
+  <category>
+    <pattern>EXAMEN EJERCICIOS</pattern>
+    <template>Se plantearan diversos ejercicios como los hechos en seminarios de problemas
+    para que los resuelvas</template>
+  </category>
+
+  <category>
+    <pattern>^ examen ^ ejercicios ^</pattern>
+    <template><srai>EXAMEN EJERCICIOS</srai></template>
+  </category>
+
+  <!-- pregunta 37 -->
+
+  <category>
+    <pattern>FALTA DEFENSA PRACTICA</pattern>
+    <template>Se te puntuara con un 0</template>
+  </category>
+
+  <category>
+    <pattern>^ no ^ defiendo ^ practica</pattern>
+    <template><srai>FALTA DEFENSA PRACTICA</srai></template>
+  </category>
+
+  <!-- pregunta 38 -->
+
+  <category>
+    <pattern>DUDA NIVEL 3</pattern>
+    <template>Probar a superarlo ya que no pierdes nada por intentarlo</template>
+  </category>
+
+  <category>
+    <pattern>^ seguro ^ superar ^ nivel ^</pattern>
+    <template><srai>DUDA NIVEL 3</srai></template>
+  </category>
+
+  <!-- pregunta 39 -->
+
+  <category>
+    <pattern>NUMERO PRACTICAS</pattern>
+    <template>tres</template>
+  </category>
+
+  <category>
+    <pattern>^ cuantas ^ practicas ^</pattern>
+    <template><srai>NUMERO PRACTICAS</srai></template>
+  </category>
+
+  <!-- pregunta 40 -->
+
+  <category>
+    <pattern>PROGRAMAR C++</pattern>
+    <template>Las dos segundas practicas son en c++ osea que si</template>
+  </category>
+
+  <category>
+    <pattern>^ programo ^ c++ ^</pattern>
+    <template><srai>PROGRAMAR C++</srai></template>
+  </category>
+
+  <!-- pregunta 41 -->
+
+  <category>
+    <pattern>ODIO AIML</pattern>
+    <template>No, la primera practica es en AIML</template>
+  </category>
+
+  <category>
+    <pattern>^ odio aiml ^</pattern>
+    <template><srai>ODIO AIML</srai></template>
+  </category>
+
+  <!-- pregunta 42 -->
+
+  <category>
+    <pattern>OFICINA PROFESOR PRACTICAS</pattern>
+    <template>En la 4 plata de la ETSIIT o en ciencias</template>
+  </category>
+
+  <category>
+    <pattern>^ oficina ^ profesor ^ practicas ^</pattern>
+    <template><srai>OFICINA PROFESOR PRACTICAS</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ despacho ^ profesor ^ practicas ^</pattern>
+    <template><srai>OFICINA PROFESOR PRACTICAS</srai></template>
+  </category>
+
+  <!-- pregunta 43 -->
+
+  <category>
+    <pattern>DESPACHO TEORIA</pattern>
+    <template>Planta 4 de la ETSIIT despacho 40</template>
+  </category>
+
+  <category>
+    <pattern>^ despacho ^ profesor ^ teoria ^</pattern>
+    <template><srai>DESPACHO TEORIA</srai></template>
+  </category>
+
+  <category>
+    <pattern>^ oficina ^ profesor ^ teoria ^</pattern>
+    <template><srai>OFICINA PROFESOR TEORIA</srai></template>
+  </category>
+
+  <!-- pregunta 44 45-->
+
+  <category>
+    <pattern>APROBAR CON * PUNTOS</pattern>
+    <template>Recuerda que para aprobar necesitas una media mayor de 5</template>
+  </category>
+
+  <!-- pregunta 46 -->
+
+  <category>
+    <pattern>RECUPERAR PRACTICA</pattern>
+    <template>Consultalo con tu profesor y el te lo indicara</template>
+  </category>
+
+  <category>
+    <pattern>^ tarde ^ asignatura ^ recuperar ^ practica</pattern>
+    <template><srai>RECUPERAR PRACTICA</srai></template>
+  </category>
+
+  <!-- pregunta 47 -->
+  <category>
+    <pattern> ^ tarde ^ aprobar ^ practica^</pattern>
+    <template><srai>APROBAR SIN PRACTICA</srai></template>
+  </category>
+
+  <!-- pregunta 48 -->
+  <category>
+    <pattern> ^ encantan ^ agentes conversacionales ^ hacer la defensa ^</pattern>
+    <template>Deberia ser un agente demasiado bueno, asi que no lo aconsejo</template>
+  </category>
+
+  <!-- pregunta 49 -->
+  <category>
+    <pattern> ^ siguientes ^ programar ^</pattern>
+    <template>Si por supuesto</template>
+  </category>
+
+  <!-- pregunta 50 por fin!!!! -->
+  <category>
+    <pattern>^ resto ^ practica ^ complica ^</pattern>
+    <template>No excesivamente</template>
+  </category>
+
+</aiml>

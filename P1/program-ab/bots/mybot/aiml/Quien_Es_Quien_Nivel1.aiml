@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+<!--comenzar la conversacion-->
+
+<category>
+  <pattern>Hola amigo</pattern>
+  <template>
+    <think>
+      <!--Variables golbales-->
+      <set name="color_pelo">none</set>
+      <set name="color_piel">none</set>
+      <set name="color_ojos">none</set>
+      <set name="bigote">none</set>
+      <set name="barba">none</set>
+      <set name="nombre_posible">Alejandro Alfonso Antonio Cristina Gabriela Ivan
+         Javier Juan Laura Luis Marco Maria Paco Pepe Sofia Sonia</set>
+    </think>
+    ¿Hola amig@, prefieres jugar a adivinar un personaje o quieres que
+  lo adivine yo?</template>
+</category>
+
+
+<!-- Pensar personaje -->
+<category>
+  <pattern>^ adivinar ^</pattern>
+  <template><!--Perfecto, voy a pensar un personaje</template>-->
+    <think>
+      <set name="modo">el_adivina</set>
+      <set var="pos"><srai>RANDOM 15</srai></set>
+      <set name="pensado"><srai>SELECTITEM <get var="pos"/> IN <get name="nombre_posible"/></srai></set>
+    </think>
+    he pensado en <get name="pensado"/> que esta en la posicion <get var="pos"/></template>
+</category>
+
+<!-- adivinar personaje dado -->
+<category>
+  <pattern>^ adivina ^</pattern>
+  <template>
+    <think>
+      <set name="modo">yo_adivino</set>
+    </think>
+    alla vamos, necesito hacerte unas pocas preguntas
+  </template>
+</category>
+
+<category>
+  <pattern>^ color ^ pelo ^ es *</pattern>
+  <template>
+    <think>
+      <set var="color"><star index="4"/></set>
+      <set var="color_pensado"><map name="colorpelo"><get name="pensado"/></map></set>
+      <set var="resultado"><srai>COMPARE <get var="color"/> WITH <get var="color_pensado"/></srai></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="resultado">
+          <li value="YES">
+            si el color de pelo del personaje que he pensado es <star index="4"/>
+          </li>
+          <li value="NO">
+            no el color de pelo de pelo es otro
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern>^ color ^ ojos ^ es *</pattern>
+  <template>
+    <think>
+      <set var="color"><star index="4"/></set>
+      <set var="color_pensado"><map name="colorOjos"><get name="pensado"/></map></set>
+      <set var="resultado"><srai>COMPARE <get var="color"/> WITH <get var="color_pensado"/></srai></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="resultado">
+          <li value="YES">
+            si el color de ojos del personaje que he pensado es <star index="4"/>
+          </li>
+          <li value="NO">
+            no el color de ojos es otro
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern>^ color ^ piel ^ es *</pattern>
+  <template>
+    <think>
+      <set var="color"><star index="4"/></set>
+      <set var="color_pensado"><map name="colorPiel"><get name="pensado"/></map></set>
+      <set var="resultado"><srai>COMPARE <get var="color"/> WITH <get var="color_pensado"/></srai></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="resultado">
+          <li value="YES">
+            si el color de piel del personaje que he pensado es <star index="4"/>
+          </li>
+          <li value="NO">
+            no el color de piel de pelo es otro
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern> ^ es calvo ^</pattern>
+  <template>
+    <think>
+      <set var="calvo"><map name="pelo"><get name="pensado"/></map></set>
+      <set var="resultado"><srai>COMPARE <get var="calvo"/> WITH Si/></srai></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="resultado">
+          <li value="YES">
+            si el personaje es calvo
+          </li>
+          <li value="NO">
+            no el personaje tiene pelo
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern> ^ tiene barba ^</pattern>
+  <template>
+    <think>
+      <set var="tiene_barba"><map name="barba"><get name="pensado"/></map></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="tiene_barba">
+          <li value="Si">
+            si el personaje tiene barba
+          </li>
+          <li value="No">
+            no el personaje esta afeitado
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern> ^ tiene bigote ^</pattern>
+  <template>
+    <think>
+      <set var="tiene_bigote"><map name="bigote"><get name="pensado"/></map></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="tiene_bigote">
+          <li value="Si">
+            si el personaje tiene bigote
+          </li>
+          <li value="No">
+            no el personaje tiene bigote
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern> ^ tiene gafas ^</pattern>
+  <template>
+    <think>
+      <set var="tiene_gafas"><map name="gafas"><get name="pensado"/></map></set>
+      <set var="resultado"><srai>COMPARE <get var="tiene_gafas"/> WITH Si/></srai></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="resultado">
+          <li value="YES">
+            si el personaje tiene gafas
+          </li>
+          <li value="NO">
+            no el personaje tiene gafas
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern> ^ es ^ *</pattern>
+  <template>
+    <think>
+      <set var="genero"><map name="genero"><get name="pensado"/></map></set>
+      <set var="resultado"><srai>COMPARE <get var="genero"/> WITH <star index="3"/></srai></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="resultado">
+          <li value="YES">
+            si el personaje es <star index="3"/>
+          </li>
+          <li value="NO">
+            no el personaje no es <star index="3"/>
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern>^ personaje ^ pensado es *</pattern>
+  <template>
+    <think>
+      <set var="resultado"><srai>COMPARE <star index="3"/> WITH <get name="pensado"/></srai></set>
+    </think>
+    <condition name="modo">
+      <li value="el_adivina">
+        <condition var="resultado">
+          <li value="YES">
+            si el personaje es <star index="3"/>
+          </li>
+          <li value="NO">
+            no el personaje no es <star index="3"/>
+          </li>
+        </condition>
+      </li>
+      <li value="yo_adivino">
+        es mi turno de adivinar necesito hacer yo las pregunatas
+      </li>
+  </condition>
+  </template>
+</category>
+
+
+<!-- Adivinar Personaje-->
+<category>
+  <pattern>^ adivines tu ^</pattern>
+  <template> pues alla voy, necesito hacerte algunas preguntas.</template>
+</category>
+
+<category>
+  <pattern>vale ^ perfecto</pattern>
+  <template>tu personaje es una mujer?</template>
+</category>
+
+<category>
+  <pattern>^ Mi personaje es ^ *</pattern>
+  <template>
+    <!--<think>-->
+      <!-- liminar todos los elementos personahje q no sean del genero dado-->
+      <set var="item"><srai>ITERATE <get name="nombre_posible"/></srai></set>
+      <condition var="item">
+        <li value="end"></li>
+        <li><get var="item"/>
+          <set var="item"><srai>NEXT</srai></set>
+          <set var="genero_iterado"><map name="genero"><get var="item"/></map></set>
+          <set var="iguales"><srai>COMPARE <get var="genero_iterado"/> WITH <star index="3"/></srai></set>
+          <condition var="iguales">
+            <li value="YES">
+              <get var="item"/> es un <star index="3"/>
+              <srai>ADDITEM <get var="item"/> IN <set name="validos"/></srai>
+            </li>
+            <!--<li value="NO">
+              <get var="item"/> no es un <star index="3"/>
+              <set var="numero_a_eliminar"><srai>FINDITEM <get var="item"/> IN <get name="nombre_posible"/></srai></set>
+              eliminando a <get var="item"/> de la lista
+              <srai>elimina a  <get var="numero_a_eliminar"/></srai>
+            </li>-->
+          </condition>
+          <loop/>
+        </li>
+      </condition>
+    <!--</think>-->
+    vale, el color de los ojos de tu personaje es marron?
+  </template>
+</category>
+
+<category>
+  <pattern> Dime todas las frutas que conoces </pattern>
+  <template>
+    Estos son los nombres posibles
+    <think>
+      <set var="item">
+        <srai> ITERATE <get name="nombre_posible"/> </srai>
+      </set>
+    </think>
+      <condition var="item">
+      <li value="end"></li>
+      <li> <get var="item"/>
+    <think>
+      <set var="item">
+      <srai>NEXT</srai>
+      </set>
+    </think>
+    <loop/>
+    </li>
+    </condition>
+  </template>
+</category>
+
+<category>
+  <pattern>elimina a *</pattern>
+  <template>
+    <srai>REMOVEITEM <star/> IN <get name="nombre_posible"/></srai>
+   </template>
+</category>
+
+
+</aiml>

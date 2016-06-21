@@ -1,0 +1,16 @@
+Alejandro:Rojo
+Alfonso:Azul
+Antonio:Rojo
+Cristina:Verde
+Gabriela:Azul
+Ivan:Azul
+Javier:Marron
+Juan:Marron
+Laura:Azul
+Luis:Azul
+Marco:Azul
+Maria:Rojo
+Paco:Azul
+Pepe:Marron
+Sofia:Marron
+Sonia:Azul

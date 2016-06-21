@@ -1,0 +1,16 @@
+ Alejandro:Si
+ Alfonso:Si
+ Antonio:Si
+ Cristina:Si
+ Gabriela:Si
+ Ivan:Si
+ Javier:Si
+ Juan:No
+ Laura:Si
+ Luis:No
+ Marco:No
+ Maria:Si
+ Paco:Si
+ Pepe:Si
+ Sofia:Si
+ Sonia:Si

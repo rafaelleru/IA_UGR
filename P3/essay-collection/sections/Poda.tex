@@ -1,0 +1,8 @@
+\section{Realizacion de la poda Alfa-Beta}
+\label{sec:poda}
+
+	La realización del algoritmo de poda ha sido implementado como una clase que no es miembro de la clase player que es la que estamos modificando para esta practica.
+
+	El algoritmo genera los descendientes del tablero actual que es pasado como parametro y evalua la función heuristica para cada uno de dichos hijos, devolviendo en función del tipo de nodo (Min o Max) la valoracion correspondiente.
+
+	Dentro de la funcion de poda el parametro mas destacado es 'acc', un entero pasado por referencia que almacenara la acción que ha obtenido una mayor valoracion en la poda Alfa-Beta. Dicho parametro es usado en el metodo de la clase player Think para aplicar la siguiente acción al tablero y asi intentar alcanzar nuestro objetivo de ganar la partida.

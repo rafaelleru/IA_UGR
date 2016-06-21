@@ -1,0 +1,16 @@
+Alejandro:Negro
+Alfonso:Negro
+Antonio:Negro
+Cristina:Negro
+Gabriela:Blanco
+Ivan:Amarillo
+Javier:Negro
+Juan:Amarillo
+Laura:Negro
+Luis:Naranja
+Marco:Blanco
+Maria:Rojo
+Paco:Amarillo
+Pepe:Naranja
+Sofia:Castaño
+Sonia:Negro

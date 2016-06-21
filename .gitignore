@@ -1,0 +1,10 @@
+
+*.o
+*.xml
+*.aux
+*.log
+*.bcf
+*.toc
+*.out
+*.a
+*vgcore*

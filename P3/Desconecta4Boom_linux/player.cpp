@@ -436,3 +436,23 @@ double Alfa_Beta(Environment &tablero, int player, int prof, int limite, int &ac
     }
 
   }
+
+  /*int detonaBOOM(Environment &estado, int player){
+    if(player = 0)
+      char bomba = '4';
+    else char bomba = '5';
+
+    int casillafil, casillacol;
+
+    for (size_t i = 0; i < 7; i++) {
+      for (size_t j = 0; j < 7; j++) {
+        if(estado.See_Casilla(i, j) == bomba){
+          casillafil = i;
+          casillacol = j;
+        }
+      }
+    }
+
+    Environment aux = estado;
+
+  }*/
